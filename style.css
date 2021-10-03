@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
+
+body {
+  background: linear-gradient(236.85deg, #a84f00 27.26%, #f7a45a 96.03%);
+  font-family: "Inconsolata", monospace;
+}
+
+.container {
+  background: linear-gradient(230.65deg, #f5a143 27.49%, #d99050 83.19%);
+  color: #1c1c1c;
+  margin: 64px; /* margim do body para o container*/
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 0px #1010106b;
+  padding: 64px; /* coloca borda em relação aos elementos internos do container. */
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+}
+
+.perfil-foto {
+  border-radius: 460px;
+  max-height: 160px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.titulo {
+  margin-left: 16px;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+.titulo h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-size: 19px;
+  font-weight: 400;
+  padding: 8px 16px;
+  background: #ee7000;
+  border-radius: 100px;
+}
+.redes-sociais {
+  max-height: 20px;
+  justify-items: space-between;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-right: 10px;
+}
+
+.redes-sociais:hover {
+  transform: scale(1.7);
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+
+  background: #f7c9a0;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+  margin-top: 32px;
+  padding: 32px;
+}
+
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos li {
+  list-style-type: none;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.projetos a {
+  /* essa estilização deixa o link com cara de texto padrão*/
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+.dark {
+  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+}
+
+.dark .container {
+  background: #333439;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  border-radius: 20px;
+  color: #f6f6f6;
+}
+
+.dark .projetos {
+  color: #1c1c1c;
+  background: #7e8083;
+}
+
+.dark .tema button {
+  background: #1c1c1c;
+  color: #ffffff;
+  border: 2px solid #f7f7f7;
+}
